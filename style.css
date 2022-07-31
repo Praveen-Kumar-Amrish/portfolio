@@ -232,12 +232,12 @@ table {
   @media only screen and (max-width: 600px){
       #header{
           background-image: url(background.jpg); 
-          background-position-x: 500%;
+          background-position-x: 0%;
           background-position-y: 100%;
       }
 
       .header-text{
-          margin-top: 110%;
+          margin-top: 150%;
           font-size: 15px;
       }
 
