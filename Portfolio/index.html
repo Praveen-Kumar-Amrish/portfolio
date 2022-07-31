@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo1.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa fa-bars" color:lightblue; onclick="closemenu()"></i>
+                </ul>
+                <i class="fa fa-bars" color:lightblue; onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Budding Programmer</p>
+                <h1>Hi, I am <span>Praveen Kumar</span> <br> from Chennai</h1>
+            </div>
+        </div>
+
+    </div>
+    <div id="about">
+           <div class="container">
+               <div class="row">
+                   <div class="about-col-1">
+                       <img src="images/background2.jpg" >
+                   </div>
+                   <div class="about-col-2">
+                       <h1 class="sub-title">About Me</h1>
+                       <p>Enthustiatic Learner / Passionate Story Writer
+                           Having a great interest in programming. Continuosly upgrading myself in programming languages 
+                           like Java, Javascript and developed few projects using them. Looking forward to pursue a career
+                           in Blockchain also open to learn and work any tech. 
+                       </p>
+
+                       <div class="tab-titles">
+                           <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                           <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                           <p class="tab-links" onclick="opentab('education')">Education</p>
+                       </div>
+                       <div class="table-contents active-table" id="skills">
+                           <table>
+                               <tr>
+                                   <th>Front-End</th>
+                                   <th>Back-End</th>
+                               </tr>
+                               <tr>
+                                   <td>Html</td>
+                                   <td>Java</td>
+                               </tr>
+                               <tr>
+                                   <td>css</td>
+                                   <td rowspan="3">Spring Framework
+                                       <ul>
+                                           <li>spring Core</li>
+                                           <li>Spring MVC</li>
+                                           <li>spring Rest</li>    
+                                           <li>Hibernate</li>
+                                       </ul>
+                                   </td>
+                               </tr>
+                               <tr>
+                                   <td>JavaScript</td>
+                               </tr>
+                               <tr>
+                                   <td>React</td>
+                               </tr>
+                            </table>
+                       </div>
+                       <div class="table-contents" id="experience">
+                        <table>
+                            <tr>
+                                <th>Programmer Analyst Trainee</th>
+                            </tr>
+                            <tr>
+                                <td>Cognizant Technology Solutions</td>
+                                <td>02/15/2022 - Present</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="table-contents" id="education">
+                        <table>
+                            <tr>
+                                <th>B.E. Mechanical Engineering</th>
+                            </tr>
+                            <tr>
+                                <td><h3>University</h3>Sri Ram Engineering College (Anna University)</td>
+                                <td>06/01/2016 - 05/31/2020</td>
+                            </tr>
+                            <tr>
+                                <td><h3>HSC</h3>SCS Mat Hr Sec School</td>
+                                <td>06/01/2015 - 05/31/2016</td>
+                            </tr>
+                            <tr>
+                                <td><h3>SSLC</h3>SCS Mat Hr Sec School</td>
+                                <td>06/01/2013 - 05/31/2014</td>
+                            </tr>
+                        </table>
+                    </div>
+                   </div>
+                </div>
+            </div>
+    </div>
+<!-- Works -->
+<div id="service">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="service-list">
+            <div class="services">
+                <h2>Story 1</h2>
+                <p>Tune</p>
+                <a href="https://www.wattpad.com/story/219089972-tune" target="_blank">Visit</a>
+            </div>
+            <div class="services">
+                <h2>Story 2</h2>
+                <p>Fire on the Mountain</p>
+                <a href="https://www.wattpad.com/story/230149091-fire-on-the-mountain-run-run-run" target="_blank">Visit</a>
+            </div>
+            <div class="services">
+                <h2>Story 3</h2>
+                <p>No Escape</p>
+                <a href="https://www.wattpad.com/story/307757799-no-escape" target="_blank">Visit</a>
+            </div>
+            <div class="services">
+                <h2>Story 4</h2>
+                <p>Perpetual</p>
+                <a href="https://www.wattpad.com/story/312646756-%F0%9F%A6%8B-perpetual-%F0%9F%A6%8B" target="_blank">Visit</a>
+            </div>
+            
+        </div>
+        <div class="loadMore">Load More</div>
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-2">
+                <div class="sub-title">Contact Me</div>
+                <p><i class="fa fa-cloud" color:lightblue;></i>praveenkumaramrish@gmail.com</p>
+                <p><i class="fa fa-cloud" color:lightblue;></i>+91 8428939121</p>
+                <div class="social-icons">
+
+                </div>
+            </div>
+            <div class="about-col-1">
+                <img src="images/contact.png" >
+
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tablecontents = document.getElementsByClassName("table-contents");
+
+        const opentab = (tabname) =>{
+            for(tablecontent of tablecontents){
+                tablecontent.classList.remove("active-table"); 
+            }
+            document.getElementById(tabname).classList.add("active-table");
+        }
+
+        var sidemenu = document.getElementById("sidemenu"); 
+        function openmenu(){
+            sidemenu.style.right='0';
+        }
+        function closemenu(){
+            sidemenu.style.right='-200px';
+        }
+
+        $(".services").slice(0,3).show();
+        $(".loadMore").on("click", function(){
+            $(".services:hidden").slice(0,3).slideDown()
+            if($(".services:hidden").length == 0){
+                $(".loadMore").fadeOut('slow');
+            }
+        })
+    </script>
+</body>
+</html>
